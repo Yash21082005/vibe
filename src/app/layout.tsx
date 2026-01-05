@@ -119,7 +119,12 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <ClerkProvider>
+        <ClerkProvider
+        appearance={{
+          variables:{
+            colorPrimary: "#C96342",
+          }
+        }}>
           <TRPCReactProvider>
             <ThemeProvider
               attribute="class"
